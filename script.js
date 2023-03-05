@@ -21,3 +21,14 @@ function sumarInputValues(event){
     // event.preventDefault();
     pResult.innerText = "Resultado: " + (Number(input1.value) + Number(input2.value));
 }
+
+h1.addEventListener('mouseover', changeColor);
+h1.addEventListener('mouseout', originalColor);
+
+function changeColor(){
+    h1.style.color = "red";
+}
+
+function originalColor(){
+    h1.style.color = "black";
+}
